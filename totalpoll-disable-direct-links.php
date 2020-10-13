@@ -11,7 +11,8 @@ add_filter(
 	'totalpoll/filters/cpt/args',
 	function ( $args ) {
 		$args['public'] = false;
-    $args['show_ui'] = true;
+		$args['publicly_queryable'] = false;
+		$args['show_ui'] = true;
 
 		return $args;
 	}
